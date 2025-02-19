@@ -74,7 +74,7 @@ export default Vue.extend({
       this.status.setLoading()
 
       this.$axios
-        .$post(`https://api.express.injective.dev/testnet-faucet`, { address })
+        .$post(`https://jsbqfdd4yk.execute-api.us-east-1.amazonaws.com/v1/faucet`, { address })
         .then((response: any) => {
           this.$toast.success(response.message)
         })
